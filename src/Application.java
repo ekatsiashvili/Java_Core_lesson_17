@@ -6,6 +6,7 @@ public class Application {
 
 		Collection collection = new Collection(number);
 		Iterator iterForward = collection.createForward();
+		System.out.println("===========================");
 		System.out.println("Output forward:");
 		while (iterForward.hasNext()) {
 			Number elemForward = iterForward.next();
@@ -16,7 +17,7 @@ public class Application {
 			System.out.println(elemForward);
 		}
 
-		System.out.println();
+		System.out.println("===========================");
 		System.out.println("Output backward:");
 
 		Iterator iterBackward = collection.createBackward();
@@ -30,7 +31,7 @@ public class Application {
 			i++;
 		}
 
-		System.out.println();
+		System.out.println("===========================");
 
 		System.out.println("Output static:");
 
@@ -48,7 +49,7 @@ public class Application {
 			y++;
 		}
 
-		System.out.println();
+		System.out.println("===========================");
 
 		System.out.println("Output local:");
 
@@ -66,7 +67,7 @@ public class Application {
 			n++;
 		}
 
-		System.out.println();
+		System.out.println("===========================");
 		System.out.println("Output anonymous:");
 
 		Iterator iterAnonymous = collection.createAnonymous();
@@ -82,7 +83,7 @@ public class Application {
 			m++;
 		}
 
-		System.out.println();
+		System.out.println("===========================");
 
 	}
 }
