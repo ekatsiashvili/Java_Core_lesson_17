@@ -16,12 +16,10 @@ class Collection {
 
 		private int count = 0;
 
-		@Override
 		public boolean hasNext() {
 			return count < arr.length;
 		}
 
-		@Override
 		public Number next() {
 			return arr[count++];
 		}
@@ -35,12 +33,10 @@ class Collection {
 
 		public int count = arr.length - 1;
 
-		@Override
 		public boolean hasNext() {
 			return count >= 0;
 		}
 
-		@Override
 		public Number next() {
 			return arr[count--];
 		}
@@ -55,12 +51,10 @@ class Collection {
 
 			public int count = arr.length - 1;
 
-			@Override
 			public Number next() {
 				return arr[count--];
 			}
 
-			@Override
 			public boolean hasNext() {
 				return count >= 0;
 			}
@@ -72,12 +66,10 @@ class Collection {
 
 			private int count = 0;
 
-			@Override
 			public boolean hasNext() {
 				return count < arr.length;
 			}
 
-			@Override
 			public Number next() {
 				return arr[count++];
 			}
@@ -89,12 +81,10 @@ class Collection {
 
 		private int count = 0;
 
-		@Override
 		public boolean hasNext() {
 			return count < arr.length;
 		}
 
-		@Override
 		public Number next() {
 			return arr[count++];
 		}
